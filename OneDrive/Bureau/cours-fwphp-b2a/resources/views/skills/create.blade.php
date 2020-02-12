@@ -7,6 +7,10 @@
 
   <form method="post" class="form" action="{{ route('skills.store') }}">
     @csrf
+<<<<<<< HEAD
+
+=======
+>>>>>>> Last commit
       <div class="form-group">
         <label for="name">Name :</label>
         <input type="text" class="form-control" name="name"/>
@@ -15,6 +19,13 @@
         <label for="logo">Logo :</label>
         <input type="text" class="form-control" name="logo"/>        
       </div>
+<<<<<<< HEAD
+      
+      <button type="submit" class="btn btn-primary">Submit</button>
+      
+  </form>
+  <button type="submit" name="action" class="btn btn-secondary float-right" value="return" onclick="history.back()";>Back</button>
+=======
     <div class="row"> 
     <div class="col-md-11">
       <button type="submit" class="btn btn-primary">Submit</button>
@@ -27,5 +38,6 @@
 
    
   </div>
+>>>>>>> Last commit
 </div>
 @endsection

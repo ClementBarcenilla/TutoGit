@@ -33,8 +33,12 @@ Route::middleware('admin')->group(function () {
 
 Route::resource('skills', 'SkillController');
 
+<<<<<<< HEAD
+Route::resource('rank', 'AdminController');
+=======
 Route::resource('admins', 'AdminController');
 
 Route::resource('users', 'UserController');
+>>>>>>> Last commit
 
 });

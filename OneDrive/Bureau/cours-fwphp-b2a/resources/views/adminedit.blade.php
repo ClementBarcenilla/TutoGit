@@ -1,0 +1,30 @@
+@extends('layouts.app')
+
+@section('title', 'Update Rank')
+
+@section('content')
+
+  <form method="post" class="form" action="{{ route('rank.update', $rank->id) }}">
+  @method('PATCH')
+    @csrf
+    <div class="container">
+      <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+      <label class="form-check-label" for="exampleRadios1">
+        Default radio
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+      <label class="form-check-label" for="exampleRadios2">
+        Second default radio
+      </label>
+    </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+  
+  
+  
+
+@endsection

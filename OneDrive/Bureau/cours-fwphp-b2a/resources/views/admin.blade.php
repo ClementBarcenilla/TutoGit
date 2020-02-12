@@ -2,7 +2,12 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
+<<<<<<< HEAD
+        <div class="col-md-8">
+        
+=======
 
+>>>>>>> Last commit
           @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
@@ -17,10 +22,17 @@
           <table class="table">
         <thead>
             <tr>
+<<<<<<< HEAD
+                <td>Nom</td>
+                <td>Prenom</td>
+                <td>Nom</td>
+                <td>Permission</td>
+=======
                 <td>User Name</td>
                 <td>Firstname</td>
                 <td>Name</td>
                 <td>Rank</td>
+>>>>>>> Last commit
                 <td>Actions</td>
             </tr>
         </thead>
@@ -31,6 +43,9 @@
                     <td>{{$user->lastname}}</td>
                     <td>{{$user->firstname}}</td>
                     <td>{{$user->rank}}</td>
+<<<<<<< HEAD
+                    <td><a href="{{ route('rank.edit', $user->id) }}">Edit</a></td>
+=======
                     <td><a  class="btn btn-warning" href="{{ route('admins.edit', $user->id) }}">Edit</a></td>  
                     <td>
                       <form action="{{ route('admins.destroy', $user->id) }}"method="post">
@@ -40,6 +55,7 @@
                       </form>
                     </td>        
                     
+>>>>>>> Last commit
                 </tr>
             @endforeach
         </tbody>

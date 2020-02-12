@@ -4,6 +4,8 @@
 
 @section('content')
 
+<<<<<<< HEAD
+=======
 <div class="container">
   <div class="row justify-content-center">
             Complete all the required fileds to edit the skill :  
@@ -14,6 +16,7 @@
   </div>
 </div>
 
+>>>>>>> Last commit
   <form method="post" class="form" action="{{ route('skills.update', $skill->id) }}">
   @method('PATCH')
     @csrf
@@ -26,6 +29,11 @@
         <label for="logo">Logo :</label>
         <input type="text" class="form-control" name="logo"/>
       </div>
+<<<<<<< HEAD
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+=======
       <div class="row"> 
         <div class="col-md-11">
       <button type="submit" class="btn btn-primary">Submit</button>
@@ -34,5 +42,6 @@
      <div class="col-md-1">
        <a  class= "btn btn-secondary"  class = "btn float-right" href="/skills">Back</a>
      </div> 
+>>>>>>> Last commit
   
 @endsection

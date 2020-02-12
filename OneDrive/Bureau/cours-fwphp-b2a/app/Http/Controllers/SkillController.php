@@ -113,9 +113,13 @@ class SkillController extends Controller
      */
     public function destroy($id)
     {
+<<<<<<< HEAD
+        //
+=======
         $skill = Skill::find($id);
         $skill->delete();
         
         return redirect( '/skills');
+>>>>>>> Last commit
     }
 }
