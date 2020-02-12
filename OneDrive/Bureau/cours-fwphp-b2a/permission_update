@@ -1,0 +1,8 @@
+#!/bin/sh
+
+chown -R clement:www-data $1
+find $1 -type f -exec chmod 664 {} \;
+find $1 -type d -exec chmod 775 {} \;
+cd $1
+chgrp -R www-data storage bootstrap/cache
+chmod -R ug+rwx storage bootstrap/cache
